@@ -64,7 +64,7 @@ def run_proportions_ztest(
             difference + margin,
         ),
     }
-    logger.info(
+    logger.debug(
         "Two-proportion z-test: z=%.3f, p=%.4g, significant=%s",
         z_statistic,
         p_value,

@@ -45,7 +45,7 @@ def simulate_peeking(
     crossed_counts = np.zeros(len(intervals), dtype=int)
 
     logger.info(
-        "Under H0 with no peeking, FPR should be 5%%. Peeking inflates this."
+        "Under H0 with no peeking, FPR should be 5%. Peeking inflates this."
     )
     for _ in range(n_simulations):
         control = rng.binomial(1, base_rate, n_per_group)
